@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,98 +8,83 @@
 
 <style>
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0b0b0b;
-    color: white;
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+header {
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:25px;
+    text-align:center;
+    background:rgba(0,0,0,0.5);
+}
+
+nav a {
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-size:14px;
 }
 
 .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
     url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba")
     center/cover;
 }
 
-.content {
-    max-width: 900px;
-    padding: 30px;
-}
-
 h1 {
-    font-size: 70px;
-    letter-spacing: 5px;
-    margin: 0;
+    font-size:70px;
+    letter-spacing:8px;
 }
 
 h2 {
-    font-size: 28px;
-    font-weight: normal;
-    margin-top: 20px;
+    font-weight:normal;
 }
 
 p {
-    font-size: 20px;
-    line-height: 1.8;
-    color: #ddd;
+    max-width:700px;
+    line-height:2;
+    color:#ddd;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 35px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.button:hover {
-    background:white;
-    color:black;
-}
-
-.section {
-    padding:70px 10%;
+section {
+    padding:80px 10%;
     text-align:center;
 }
 
-.section h2 {
-    font-size:40px;
-}
-
-footer {
-    text-align:center;
-    padding:30px;
-    color:#888;
-}
-
-@media(max-width:700px){
-
-h1 {
-    font-size:40px;
-}
-
-h2 {
-    font-size:22px;
-}
-
-}
 </style>
 
 </head>
 
-
 <body>
 
-<section class="hero">
+<header>
 
-<div class="content">
+<nav>
+<a href="#">HOME</a>
+<a href="#">ABOUT</a>
+<a href="#">FILMS</a>
+<a href="#">DOCUMENTARIES</a>
+<a href="#">RESEARCH</a>
+<a href="#">CONTACT</a>
+</nav>
+
+</header>
+
+
+<div class="hero">
+
+<div>
 
 <h1>FOROUD PAKNIA</h1>
 
@@ -109,47 +93,35 @@ Filmmaker | Screenwriter | Researcher
 </h2>
 
 <p>
-Official website of Foroud Paknia.
-Exploring cinema, storytelling and research through film.
+Cinema, storytelling and research through film.
 </p>
-
-<a class="button" href="#projects">
-Explore Projects
-</a>
 
 </div>
 
-</section>
+</div>
 
 
-<section class="section" id="projects">
-
-<h2>Selected Projects</h2>
-
-<p>
-Feature films, documentaries and cinematic research projects.
-</p>
-
-</section>
-
-
-<section class="section">
+<section>
 
 <h2>About</h2>
 
 <p>
 Foroud Paknia is a filmmaker, screenwriter and researcher
-working across cinema, documentary and creative development.
+working in cinema, documentary and cultural projects.
 </p>
 
 </section>
 
 
-<footer>
+<section>
 
-© Foroud Paknia
+<h2>Selected Projects</h2>
 
-</footer>
+<p>
+Feature Films • Documentaries • Research Projects
+</p>
+
+</section>
 
 
 </body>
