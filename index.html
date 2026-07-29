@@ -1,85 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Foroud Paknia | Filmmaker</title>
 
 <style>
-body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#111;
-    color:white;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-header {
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:25px;
-    text-align:center;
-    background:rgba(0,0,0,0.5);
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#0b0b0b;
+color:white;
 }
 
-nav a {
-    color:white;
-    margin:15px;
-    text-decoration:none;
-    font-size:14px;
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:25px;
+background:rgba(0,0,0,.7);
+z-index:10;
 }
 
-.hero {
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
-    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba")
-    center/cover;
+nav{
+text-align:center;
 }
 
-h1 {
-    font-size:70px;
-    letter-spacing:8px;
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:14px;
+letter-spacing:2px;
 }
 
-h2 {
-    font-weight:normal;
+
+.hero{
+
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),
+url("https://images.unsplash.com/photo-1485846234645-a62644f84728")
+center/cover;
+
 }
 
-p {
-    max-width:700px;
-    line-height:2;
-    color:#ddd;
+
+.hero h1{
+
+font-size:75px;
+letter-spacing:10px;
+
 }
 
-section {
-    padding:80px 10%;
-    text-align:center;
+
+.hero h2{
+
+font-size:28px;
+font-weight:normal;
+margin:25px 0;
+
 }
+
+
+.hero p{
+
+font-size:20px;
+max-width:700px;
+line-height:2;
+color:#ddd;
+
+}
+
+
+section{
+
+padding:100px 15%;
+text-align:center;
+
+}
+
+
+section h2{
+
+font-size:45px;
+margin-bottom:30px;
+
+}
+
+
+section p{
+
+font-size:20px;
+line-height:2;
+color:#ccc;
+
+}
+
+
+.card{
+
+margin-top:40px;
+border:1px solid #333;
+padding:40px;
+
+}
+
+
+footer{
+
+padding:30px;
+text-align:center;
+color:#777;
+
+}
+
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav a{
+display:block;
+margin:10px;
+}
+
+}
+
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <nav>
+
 <a href="#">HOME</a>
 <a href="#about">ABOUT</a>
 <a href="#films">FILMS</a>
-<a href="#">DOCUMENTARIES</a>
-<a href="#">RESEARCH</a>
-<a href="#">CONTACT</a>
+<a href="#documentaries">DOCUMENTARIES</a>
+<a href="#research">RESEARCH</a>
+<a href="#contact">CONTACT</a>
+
 </nav>
 
 </header>
+
 
 
 <div class="hero">
@@ -93,35 +179,94 @@ Filmmaker | Screenwriter | Researcher
 </h2>
 
 <p>
-Filmmaker, screenwriter and researcher exploring cinema,
-history, culture and human experience through visual storytelling.</p>
+Exploring cinema, history, culture and human experience through visual storytelling.
+</p>
 
 </div>
 
 </div>
 
 
-<section>
 
 <section id="about">
+
+<h2>About</h2>
+
 <p>
-Foroud Paknia is a filmmaker, screenwriter and researcher
-working in cinema, documentary and cultural projects.
+Foroud Paknia is a filmmaker, screenwriter and researcher working across feature films, documentary cinema and cultural projects.
 </p>
 
 </section>
+
 
 
 <section id="films">
 
-<h2>Selected Projects</h2>
+<h2>Films</h2>
+
+<div class="card">
 
 <p>
-Feature Films • Documentaries • Research Projects
+Feature film projects and screenplays.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="documentaries">
+
+<h2>Documentaries</h2>
+
+<div class="card">
+
+<p>
+Documentary projects exploring history, identity and human stories.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="research">
+
+<h2>Research</h2>
+
+<div class="card">
+
+<p>
+Cinema studies, artificial intelligence and creative research projects.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>
+Official website of Foroud Paknia.
 </p>
 
 </section>
 
 
+
+<footer>
+
+© Foroud Paknia
+
+</footer>
+
+
 </body>
+
 </html>
